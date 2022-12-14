@@ -1,0 +1,19 @@
+{
+    "chrome":{
+        "default": "95.0",
+        "versions": {
+            "95.0":{
+                "env": ["LANG=ru_RU.UTF-8","LANGUAGE=ru:en", "LC_ALL=ru_RU.UTF-8", "TZ=Europe/Mowcow"],
+                "image": "selenoid/vnc:chrome_95.0",
+                "tmpfs": {"/tmp": "size=512m"},
+                "port": "4444"
+            },
+            "95.0 csp":{
+                "env": ["LANG=ru_RU.UTF-8","LANGUAGE=ru:en", "LC_ALL=ru_RU.UTF-8", "TZ=Europe/Mowcow"],
+                "image": "chrome_csp_95:vnc_chrome_csp",
+                "tmpfs": {"/tmp": "size=512m"},
+                "port": "4444"
+            }
+        }
+    }
+}
